@@ -7,9 +7,7 @@ const app = express();
 app.use(cors());
 app.use(json());
 
-routes();
-
-const PORT = 4000;
+routes(app);
 
 export {
     app

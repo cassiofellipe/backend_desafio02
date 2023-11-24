@@ -1,9 +1,5 @@
-import { app } from "../app.js";
+import { signup } from "../controllers/signup.js";
 
-export const routes = () => {
-    app.get('/', (req, res) => {
-        res.send({
-            name: 'Cássio',
-        });
-    });
-}
+export const routes = (app) => {
+    signup(app);
+};
