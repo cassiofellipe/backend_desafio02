@@ -1,5 +1,6 @@
 import express, { json } from "express";
 import cors from "cors";
+import bcrypt from "bcrypt";
 import { routes } from "./routes/index.js";
 
 const app = express();
